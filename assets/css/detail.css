@@ -1,0 +1,279 @@
+.normal{
+    background-color: #a6a877;
+}
+
+.grass{
+    background-color: #77c850;
+}
+.fire{
+    background-color: #ee7f30;
+}
+
+.water{
+    background-color: #678fee;
+}
+
+.electric{
+    background-color: #f7cf2e;
+}
+.ice{
+    background-color: #98d5d7;
+}
+
+.ground{
+    background-color: #dfbf69;
+}
+
+.flying{
+    background-color: #bf3029;
+}
+
+.poison{
+    background-color: #a040a0;
+}
+
+.fighting{
+    background-color: #bf3029;
+}
+
+.psychic{
+    background-color: #f65687;
+}
+
+.dark{
+    background-color: #725847;
+}
+
+.rock{
+    background-color: #b8a137;
+}
+
+.bug{
+    background-color: #a8b720;
+}
+
+.ghost{
+    background-color: #6e5896;
+}
+
+.steel{
+    background-color: #b9b7cf;
+}
+
+.dragon{
+    background-color: #6f38f6;
+}
+
+.fairy{
+    background-color: #f9aec7;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+.pokemon {
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.back {
+    position: absolute;
+    top: 2.1vh;
+    left: 1vh;
+    padding: 1vh 2vh;
+    background-color: none;
+    color: white;
+    border: none;
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+
+.pokemon .number {
+    color: white;
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    font-size: 1.5rem;
+    padding: 2vh;
+    font-weight: bold;
+}
+
+.pokemon .pokemon-image {
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    top: 3vh;
+    left: 50%;
+    bottom: none;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    background-color: white;
+    border-start-start-radius: 8vh;
+    border-start-end-radius: 8vh;
+    margin-top: 5vh;
+    height: 50vh;
+    width: 47vh;
+    padding: none;
+    border: none;
+
+
+}
+
+.details h1{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* .details .type span{
+    color: black;
+    list-style: none;
+    padding: 0 5px;
+    display: inline-block;
+    font-size: 2vh; 
+} */
+
+.pokemon .details .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.pokemon .details .types .type {
+    color: black;
+    padding: .5rem .75rem;
+    font-size: .850rem;
+    margin: .25rem;
+    border-radius: 1rem;
+    text-align: center;
+    filter: brightness(1.1);
+}
+
+.Menu {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    font-size: 1.25rem;
+    gap: 6vh;
+    margin-top: 1vh;
+    border-bottom: 1vh ;
+    padding-bottom: 1vh;
+}
+
+.tab-button {
+    top: 2vh;
+    bottom: 2vh;
+    font-weight: 500;
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-button span {
+    position: relative;
+    display: inline-block;
+}
+
+.tab-button:hover span::before, .tab-button.active span::before {
+    width: 100%;
+    background: #007bff;
+}
+
+.tab-button span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.tab-content {
+    margin-top: 3vh;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.stat-container {
+    display: flex;
+    align-items: center;
+    margin: 2vh 0;
+}
+.stat-container label {
+    width: 10vh;
+    
+}
+
+.progress-bar {
+    width: 32.5vh;
+    background-color: #e0e0e0;
+    border-radius: 4vh;
+}
+
+.progress {
+    height: 1.5vh;
+    border-radius: 4vh;
+    text-align: center;
+    color: white;
+    line-height: 3vh;
+}
+
+
+.moves {
+    text-align: center;
+}
+.moves ol {
+    padding-left: 0;
+}
+.moves ol li {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
